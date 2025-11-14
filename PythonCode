@@ -109,7 +109,7 @@ def measure_performance(sort_func, arr):
     end = time.time()
     return result, end-start, peak/1024  # return result, time, memory in KB
 # Main Program
-if name == "main":
+if __name__ == "__main__":
     arr = [45, 12, 67, 23, 89, 34, 10, 5, 76]
     algorithms = {
         "Bubble Sort": bubble_sort,
